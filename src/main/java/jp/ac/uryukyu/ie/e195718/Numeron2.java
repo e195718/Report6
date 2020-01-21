@@ -1,12 +1,17 @@
 package jp.ac.uryukyu.ie.e195718;
 
 public class Numeron2 extends Numeron{
+    static int eat1 = 0;
+    static int eat2 = 0;
+    static int bite1 = 0;
+    static int bite2 = 0;
+
     //*2人プレイ用のコード
-    public static void judge2(int[] answer1, int[] exeption1, int[] answer2, int[] exeption2){
-        int eat1 = 0;
-        int eat2 = 0;
-        int bite1 = 0;
-        int bite2 = 0;
+    public void judge2(int[] answer1, int[] exeption1, int[] answer2, int[] exeption2){
+        this.eat1 = eat1;
+        this.eat2 = 0;
+        this.bite1 = 0;
+        this.bite2 = 0;
         for(int i=0; i<ANSWERSIZE; i++) {
             //1人目の入力した数字と相手の数字を比較するコード
             for (int j = 0; j < ANSWERSIZE; j++) {
