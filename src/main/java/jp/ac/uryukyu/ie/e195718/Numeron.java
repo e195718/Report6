@@ -21,9 +21,19 @@ public class Numeron {
     }
     //1人プレイか2人プレイか選択するメソッド
     public static int Chose(){
+        String Output;
         System.out.println("何人でプレイしますか？");
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
+        if (num == 1){
+            Output = "１人プレイで開始します";
+            System.out.println(Output);
+        }
+        if (num == 2){
+            Output = "2人プレイで開始します";
+
+            System.out.println(Output);
+        }
         return num;
     }
 
@@ -81,7 +91,8 @@ public class Numeron {
                 }
             }
         }
-        System.out.println(eat + "eat" + bite +"bite");
+        String result = eat + "eat" + bite + "bite";
+        System.out.println(result);
     }
 
 }
